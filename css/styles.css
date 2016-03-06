@@ -1,0 +1,148 @@
+@font-face {
+  font-family: 'fat-frank';
+  src: url('../fonts/fatfrank-free.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/fatfrank-free.woff') format('woff'),
+     url('../fonts/fatfrank-free.ttf') format('truetype'),
+     url('../fonts/fatfrank-free.svg#FontName') format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+
+.credits {
+  position: absolute;
+  bottom: 120px;
+  left: 1em;
+  font-size: 1em;
+  color: red;
+  background: transparent;
+  -webkit-transform: translateY(200%);
+  -ms-transform: translateY(200%);
+  -o-transform: translateY(200%);
+  transform: translateY(200%);
+}
+
+.credits a {
+  color: black;
+}
+
+
+.buy-button {
+  background: #ff4646;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 2px;
+  box-shadow: 0 4px #e53f3f;
+}
+
+.buy-button:hover {
+  background: #ff5858;
+}
+
+#wrap {
+  height: 1025px;
+  background: #F7C723;
+}
+
+.blue {
+  color: #46aeff;
+  font-size: 1.4em;
+  font-family: fat-frank;
+  /*text-transform: uppercase;*/
+}
+
+.red {
+  color: #ff4646;
+  font-size: 1.4em;
+  font-family: fat-frank;
+  text-transform: uppercase;
+}
+
+.regular {
+  color: #46aeff;
+  font-size: 1em;
+  font-family: Arial;
+  text-transform: uppercase;
+}
+
+.credits a:hover {
+  color: grey;
+}
+
+.row h3 {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: bold;
+  font-family: 'Quicksand', cursive;
+}
+
+/* Social */
+.socials-container{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 0;
+  z-index: 1000;
+  -webkit-transform: translateY(200%);
+  -ms-transform: translateY(200%);
+  -o-transform: translateY(200%);
+  transform: translateY(200%);
+  z-index: 9999;
+}
+
+.socials-container .social-item{
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  -webkit-background-size: 160px 40px;
+  background-size: 160px 40px;
+  background-position: 100% 0;
+  background-color: #F7C723;
+}
+
+.socials-container .social-item:hover{
+  opacity: 0.9;
+}
+
+.socials-container .social-item:not(:first-child){
+  margin-left: -2px;
+}
+
+@media screen and (max-width: 1024px){
+  .touch .socials-container .social-item:hover{
+    background-position: 0% 0;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .socials-container .social-item{
+    /*display: block;*/
+    width: 44px;
+    height: 44px;
+    -webkit-background-size: 176px 44px;
+    background-size: 176px 44px;
+  }
+
+  .socials-container .social-item:not(:first-child){
+    /*margin-top: -2px;*/
+    margin-left: -2px;
+  }
+}
+
+.facebook{
+  background-image: url(http://d2xgoeeq7a4bfy.cloudfront.net/v1/facebook.png);
+}
+
+.twitter{
+  background-image: url(http://d2xgoeeq7a4bfy.cloudfront.net/v1/twitter.png);
+}
+
+.instagram{
+  background-image: url(http://d2xgoeeq7a4bfy.cloudfront.net/v1/twitter.png);
+}
+
+.socials-container .social-item .social-link{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
